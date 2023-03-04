@@ -8,6 +8,6 @@
   <h5>{{$post["author"]}}</h5>
   <p>{{$post["body"]}}</p>
 </article>
-<a href="/blog">Kembali</a>
+<a href="/posts">Kembali</a>
 
 @endsection
