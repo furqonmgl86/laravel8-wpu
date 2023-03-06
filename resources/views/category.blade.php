@@ -4,7 +4,7 @@
 
 @section('container')
 
-<h1>Ini Halaman Blog Posts</h1>
+<h1>Post Category : {{ $category }}</h1>
 @foreach ($posts as $post)
     <article class="mb-3">
       <h2>
@@ -15,5 +15,5 @@
       <p>{{$post->excerpt}}</p>
     </article>
 @endforeach
+<a href="/categories">Kembali Ke Kategory</a>
 @endsection
-
