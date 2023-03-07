@@ -4,7 +4,9 @@
 
 @section('container')
 
-<h1>Ini Halaman Blog Posts</h1>
+<h1>Postingan yang ditulis oleh  <a href="">{{ $post_name }}</a></h1>
+<span>User namenya adalah {{ $post_user }}</span>
+<hr>
 @foreach ($posts as $post)
     <article class="mb-5 border-bottom pb-4">
       <h2>
