@@ -2,18 +2,23 @@
 @extends('layouts/main')
 
 @section('container')
-<h1>Ini Halaman Single Post</h1>
+<h1 class="text-center">Ini Halaman Single Post</h1>
 <br>
-<article>
-  <h2>{{$post->title}}</h2>
-  {{-- <h5>{{$post->author}}</h5> --}}
-  {{-- <p>{{$post->body}}</p> --}}
-  {{-- {{$post->body}} --}}
+<div class="container">
+  <div class="row justify-content-center mb-3">
+    <div class="col-md-8">
+      <h1>{{$post->title}}</h1>
+      <p>By <a href="/authors/{{ $post->author->username }}" class="text-decoration-none">{{ $post->author->name }}</a> in <a href="/categories/{{$post->category->slug}}">{{ $post->category->name}}</a> </p>
+      <img src="https://source.unsplash.com/1200x400?{{$post->category->name}}" class="img-fluid" alt="{{$post->category->name}}">
 
-  <p>By <a href="/authors/{{ $post->author->username }}" class="text-decoration-none">{{ $post->author->name }}</a> in <a href="/categories/{{$post->category->slug}}">{{ $post->category->name}}</a> </p>
-  {!!$post->body!!}
+      <article class="my-3 fs-5">
+        {!!$post->body!!}
+      </article>
 
-</article>
-<a href="/posts">Kembali</a>
-
+      <br>
+      <br>
+      <a href="/posts">Kembali</a>
+    </div>
+  </div>
+</div>
 @endsection

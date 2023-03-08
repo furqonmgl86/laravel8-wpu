@@ -51,8 +51,8 @@ class DatabaseSeeder extends Seeder
             'slug' => 'web-design'
         ]);
         Category::create([
-            'name' => "Personal",
-            'slug' => 'personal'
+            'name' => "Muslim Muslimah",
+            'slug' => 'muslim-muslimah'
         ]);
 
         Post::factory(20)->create();
