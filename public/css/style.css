@@ -23,3 +23,6 @@
     border-radius: 0;
     margin-bottom: 10px;
 }
+.form-registration input.is-invalid {
+    margin-bottom: -1px;
+}
