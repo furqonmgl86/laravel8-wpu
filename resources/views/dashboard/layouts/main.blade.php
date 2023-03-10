@@ -13,11 +13,17 @@
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
 
-    
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.0/dist/trix.css">
+  <script type="text/javascript" src="https://unpkg.com/trix@2.0.0/dist/trix.umd.min.js"></script>
+  <style>
+    trix-toolbar [data-trix-button-group = "file-tools"]{
+      display: none;
+    }
 
-    
-
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    input.disabled{
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  </style>
 
     <!-- Custom styles for this template -->
     <link href="/css/dashboard.css" rel="stylesheet">
