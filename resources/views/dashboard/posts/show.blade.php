@@ -22,7 +22,7 @@
 
       <br>
       <br>
-      <a href="/posts">Kembali</a>
+      <a href="/dashboard/posts">Kembali</a>
     </div>
   </div>
 </div>
